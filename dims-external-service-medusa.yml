@@ -1,6 +1,11 @@
 ---
 server:
   port: 18103
+  ssl:
+    key-store: keystore.p12
+    key-store-password: isirona
+    keyStroreType: PKCS12
+    keyAlias: tomcat
 salesforce:
   redirectUri: https://localhost:18103/api/v1/connection/Callback
   clientId: 3MVG9uudbyLbNPZOJq_w6ip7sTGbpSgz1jq65KM0u0b_yHnvAsAMH5pW9eiKhsezsq0ZMPQ7AfGstimlnIFJU
