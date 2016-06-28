@@ -1,1 +1,14 @@
-
+---
+spring:
+  profiles: 
+    include: medusa
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=parameterservice
+    password: I$irona123
+  jpa:
+    database: sql-server
+    show-sql: false
+device:
+  message:
+    broker:
+      hostname: localhost
