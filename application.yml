@@ -10,4 +10,4 @@ server:
 spring:
   cloud:
     config:
-      fail-fast: false
+      fail-fast: true
