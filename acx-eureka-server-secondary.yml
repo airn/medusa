@@ -1,8 +1,6 @@
 server:
   port: 8012  
 eureka:
-  instance:
-    hostname: secondary
   client:
     registerWithEureka: true
     fetchRegistry: true
