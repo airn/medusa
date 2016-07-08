@@ -2,7 +2,7 @@ server:
   port: 8011  
 eureka:
   instance:
-    hostname: eurekaprimary
+    hostname: primary
   client:
     registerWithEureka: true
     fetchRegistry: true
