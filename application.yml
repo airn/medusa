@@ -12,10 +12,10 @@ logging:
     org:
       springframework: INFO
       hibernate: INFO
-    apache:
-      camel:
-        component:
-          rabbitmq:  INFO
+      apache:
+        camel:
+          component:
+            rabbitmq: INFO
     com:
       nanthealth: TRACE
       isirona: TRACE
