@@ -7,3 +7,15 @@ eureka:
     prefer-ip-address: true
 server:
   port: ${PORT:${SERVER_PORT:0}}   # Select any available port if neither port nor server port are specified.
+logging:
+  level:
+    org:
+      springframework: INFO
+      hibernate: INFO
+    apache:
+      camel:
+        component:
+          rabbitmq:  INFO
+    com:
+      nanthealth: TRACE
+      isirona: TRACE
