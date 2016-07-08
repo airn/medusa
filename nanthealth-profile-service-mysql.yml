@@ -1,1 +1,7 @@
 ---
+spring:
+  datasource:
+    url: jdbc:mysql://mysql/nanthealthprofile
+    username: dbuser
+    password: dbpass
+    driver-class-name: com.mysql.jdbc.Driver
