@@ -1,6 +1,4 @@
 ---
-server:
-  port: 51604
 spring:
   datasource:
     url: jdbc:sqlserver://medusa:1433;databaseName=nanthealthprofile
