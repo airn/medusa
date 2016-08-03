@@ -1,6 +1,6 @@
 ---
 server:
-  port: 51116
+  port: 51607
 omron:
   clientId: 227F6C
   tokenServerUrl: https://api.fitbit.com/oauth2/token 
@@ -13,7 +13,7 @@ omron:
 spring:
   datasource:
     eventualUrl: jdbc:sqlserver://10.1.134.18:1433;databaseName=fitbitservice
-    url: jdbc:sqlserver://10.1.134.18:1433;databaseName=authenticationserviceemily
+    url: jdbc:sqlserver://10.1.134.18:1433;databaseName=nanthealthprofile
     username: sa
     password: n0ne@H0me
     driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
