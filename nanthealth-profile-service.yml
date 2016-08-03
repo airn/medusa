@@ -1,3 +1,6 @@
 ---
+eureka:
+  instance:
+    hostname: profile
 server:
   port: 51604
