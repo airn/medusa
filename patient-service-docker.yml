@@ -7,7 +7,8 @@ patient:
       log: log:marshalled
     internal:
       endpoint: vm:patientEventQueue
-    external: rabbitmq://rabbitmq:5672/PatientEvents?exchangeType=topic
+    external: 
+      topic: rabbitmq://rabbitmq:5672/PatientEvents?exchangeType=topic
     consumer:
       external:
         topic: rabbitmq://rabbitmq:5672/ConsumerPatientEvents?exchangeType=topic
