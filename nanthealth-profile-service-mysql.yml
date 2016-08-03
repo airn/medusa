@@ -6,7 +6,7 @@ spring:
     password: n0ne@H0me
     driver-class-name: com.mysql.jdbc.Driver
   jpa:
-    show-sql=true
+    show-sql: true
     database: MYSQL
     database-platform: org.hibernate.dialect.MySQL5Dialect
     hibernate:
