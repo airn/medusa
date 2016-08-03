@@ -4,6 +4,7 @@ server:
 omron:
   clientId: nanthealth-api
   clientSecret: f110fcc4-5bbc-4350-ad57-3b4520339bfa
+  scope: bloodpressure+activity+openid+offline_access
   tokenServerUrl: https://api.fitbit.com/oauth2/token 
   apiSecret: e04494793ae27e8e9834cf552f5536c3
   apiKey: 58f23096df4c82b7b8e1b30734ec8b21
