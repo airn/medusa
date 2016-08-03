@@ -1,2 +1,5 @@
+eureka:
+  instance:
+    hostname: localhost
 server:
   port: 51606
