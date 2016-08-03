@@ -1,5 +1,9 @@
 eureka:
   instance:
     hostname: localhost
+patient:
+  service:
+    internal:
+      endpoint: vm:patientEventQueue
 server:
   port: 51606
