@@ -2,6 +2,7 @@
 eureka:
   instance:
     hostname: patient
+    preferIpAddress: true
 patient:
   service:
     endpoint:
