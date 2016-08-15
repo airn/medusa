@@ -9,3 +9,4 @@ omron:
   accessTokenUrl: https://ohi-oauth.numerasocial.com/connect/token
   refreshTokenUrl: https://ohi-oauth.numerasocial.com/connect/token
   dataUrl: https://ohi-api.numerasocial.com/api/measurement
+  initializeEnabled: TRUE
