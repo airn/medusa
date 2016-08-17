@@ -5,7 +5,8 @@ spring:
       - dialect: com.mysql.jdbc.Driver
         password:
         url: jdbc:mysql://sourcesql/sources
-        username: root
+        username: sa
+        password: n0ne@H0me
         test-while-idle: true
         test-on-borrow: true
         validation-query: SELECT 1
