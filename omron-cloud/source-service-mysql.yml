@@ -4,7 +4,7 @@ spring:
     sources:
       - dialect: com.mysql.jdbc.Driver
         password: n0ne@H0me
-        url: jdbc:mysql://${mysql.host}:${mysql.port}/sources
+        url: jdbc:mysql://sourcesql/sources
         username: sa
         test-while-idle: true
         test-on-borrow: true
