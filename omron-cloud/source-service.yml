@@ -25,6 +25,7 @@ source:
         options: ?exchangeType=topic
         exchange:
           name: producerSourceEvents
+      type: rabbitmq
       hostname: rabbitmq
       port: 5672
   service:
