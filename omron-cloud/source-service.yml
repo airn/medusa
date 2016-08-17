@@ -20,7 +20,7 @@ source:
         options: ?exchangeType=fanout&queue=rawReadings
       publisher:
         exchange:
-          name:producerSourceEvents
+          name: producerSourceEvents
       producer:
         options: ?exchangeType=topic
         exchange:
