@@ -10,6 +10,8 @@ source:
     publisher:
       endpoint:
         log: log:marshalled
+      external:
+        topic: ${source.message.broker.uri}
       internal:
         endpoint: vm:sourceEventQueue
   prometheus:
@@ -20,6 +22,7 @@ source:
         exchange:
           name: rawReadingEvents
         options: ?exchangeType=fanout&queue=rawReadings
+      uri: ${source.message.broker.type}://${source.message.broker.hostname}:${source.message.broker.port}/${source.message.broker.producer.exchange.name}${source.message.broker.producer.options}
       publisher:
         exchange:
           name: producerSourceEvents
