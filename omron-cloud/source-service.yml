@@ -10,6 +10,8 @@ source:
     publisher:
       endpoint:
         log: log:marshalled
+      internal:
+        endpoint: vm:sourceEventQueue
   prometheus:
     enabled: false
   message:
