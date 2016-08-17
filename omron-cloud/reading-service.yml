@@ -21,4 +21,5 @@ reading:
   rabbitmq:
     username: guest
     password: guest
-    
+  queue:
+    name: ReadingConsumerQueue
