@@ -2,18 +2,18 @@
 spring:
   multitenancy:
     sources:
-      dialect: com.mysql.jdbc.Driver
-      url: jdbc:mysql://sourcesql/sources
-      username: sa
-      password: n0ne@H0me
-      test-while-idle: true
-      test-on-borrow: true
-      validation-query: SELECT 1
-      maximum-pool-size: 20
-      max-active: 20
-      max-idle: 10
-      max-wait: 35000
-      validation-interval: 30000
+      - dialect: com.mysql.jdbc.Driver
+        password: n0ne@H0me
+        url: jdbc:mysql://${mysql.host}:${mysql.port}/sources
+        username: sa
+        test-while-idle: true
+        test-on-borrow: true
+        validation-query: SELECT 1
+        maximum-pool-size: 20
+        max-active: 20
+        max-idle: 10
+        max-wait: 35000
+        validation-interval: 30000
     tenants:
       - tenant
   datasource:
