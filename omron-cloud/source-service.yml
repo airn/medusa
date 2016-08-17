@@ -32,6 +32,8 @@ source:
     consumer:
       external:
         topic: ${source.message.broker.type}://${source.message.broker.hostname}:${source.message.broker.port}/${source.message.broker.producer.exchange.name}${source.message.broker.producer.options}
+      internal:
+        endpoint: vm:sourceConsumerEventQueue
   rabbitmq:
     username: guest
     password: guest
