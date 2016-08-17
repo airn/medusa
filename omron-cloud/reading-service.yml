@@ -1,4 +1,7 @@
 ---
+eureka:
+  instance:
+    hostname: reading
 server:
   port: 51610
 reading:
