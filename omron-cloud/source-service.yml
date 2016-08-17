@@ -27,6 +27,10 @@ source:
           name: producerSourceEvents
       hostname: rabbitmq
       port: 5672
+  service:
+    consumer:
+      external:
+        topic: ${source.message.broker.type}://${source.message.broker.hostname}:${source.message.broker.port}/${source.message.broker.producer.exchange.name}${source.message.broker.producer.options}
   rabbitmq:
     username: guest
     password: guest
