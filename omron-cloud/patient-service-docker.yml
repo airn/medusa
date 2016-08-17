@@ -1,0 +1,20 @@
+---
+eureka:
+  instance:
+    hostname: patient
+    preferIpAddress: true
+patient:
+  service:
+    endpoint:
+      log: log:marshalled
+    internal:
+      endpoint: vm:patientEventQueue
+    external: 
+      topic: rabbitmq://rabbitmq:5672/PatientEvents?exchangeType=topic
+    consumer:
+      external:
+        topic: rabbitmq://rabbitmq:5672/ConsumerPatientEvents?exchangeType=topic
+      internal:
+        endpoint: vm:patientConsumerEventQueue
+server:
+  port: 51606

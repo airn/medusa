@@ -1,0 +1,9 @@
+---
+eureka:
+  instance:
+    hostname: profile
+    preferIpAddress: true
+profile:
+  initializeEnabled: TRUE
+server:
+  port: 51604

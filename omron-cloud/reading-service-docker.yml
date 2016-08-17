@@ -1,0 +1,20 @@
+---
+server:
+  port: 51610
+reading:
+  prometheus:
+    enabled: false
+  message:
+    broker:
+      consumer:
+        exchange:
+          name: ConsumerReadingEvents
+      publisher:
+        exchange:
+          name:PublishedReadingEvents
+      hostname: rabbitmq
+      port: 5672
+  rabbitmq:
+    username: guest
+    password: guest
+    
