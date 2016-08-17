@@ -15,7 +15,7 @@ reading:
           name: ConsumerReadingEvents
       publisher:
         exchange:
-          name:PublishedReadingEvents
+          name: PublishedReadingEvents
       hostname: rabbitmq
       port: 5672
   rabbitmq:
