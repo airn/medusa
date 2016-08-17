@@ -1,2 +1,7 @@
+---
+eureka:
+  instance:
+    hostname: source
+    preferIpAddress: true
 server:
   port: 51611
