@@ -1,8 +1,0 @@
-server:
-  port: 8012  
-eureka:
-  client:
-    registerWithEureka: true
-    fetchRegistry: true
-    serviceUrl:
-      defaultZone: http://tertiary:8013/eureka/,http://primary:8011/eureka/
