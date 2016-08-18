@@ -2,7 +2,6 @@
 eureka:
   instance:
     hostname: patient
-    preferIpAddress: true
 patient:
   message:
     broker:
