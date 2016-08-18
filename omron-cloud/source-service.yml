@@ -5,6 +5,11 @@ eureka:
     preferIpAddress: true
 server:
   port: 51611
+spring:
+  data:
+    mongodb:
+      host: readingmongo
+      port: 27017
 source:
   event:
     publisher:
