@@ -2,7 +2,6 @@
 eureka:
   instance:
     hostname: profile
-    preferIpAddress: true
 profile:
   initializeEnabled: TRUE
 server:
