@@ -1,0 +1,6 @@
+---
+association:
+  elasticsearch:
+    port: 9300
+    host: associationelastic
+    itTest: false
