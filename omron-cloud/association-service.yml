@@ -14,11 +14,16 @@ association:
       options: ?exchangeType=topic
       exchange: 
         name: AssociationEvents
-      uri: rabbitmq://tabbitmq/AssociationEvents?exchangeType=topic
-
+      uri: ${association.message.broker.type}://${association.message.broker.hostname}:${association.message.broker.port}/${association.message.broker.exchange.name}${association.message.broker.options}
+  prometheus:
+    enabled: false
 # Event routing
   service: 
     internal: 
       endpoint: vm:associationEventQueue
+    endpoint:
+      log: log:marshalled
     external: 
-      topic: rabbitmq://rabbitmq/AssociationEvents?exchangeType=topic
+      topic: ${association.message.broker.uri}
+logging:
+  file: associatio-service.log
