@@ -4,6 +4,10 @@ eureka:
     hostname: patient
     preferIpAddress: true
 patient:
+  message:
+    broker:
+      hostname: rabbitmq
+      port: 5672
   service:
     endpoint:
       log: log:marshalled
@@ -16,5 +20,10 @@ patient:
         topic: rabbitmq://rabbitmq:5672/ConsumerPatientEvents?exchangeType=topic
       internal:
         endpoint: vm:patientConsumerEventQueue
+spring:
+  data:
+    mongodb:
+      host: patientmongo
+      port: 27017
 server:
   port: 51606
