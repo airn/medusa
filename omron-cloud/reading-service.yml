@@ -2,7 +2,6 @@
 eureka:
   instance:
     hostname: reading
-    preferIpAddress: true
 server:
   port: 51610
 reading:
