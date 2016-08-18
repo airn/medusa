@@ -1,24 +1,29 @@
 ---
 eureka:
   instance:
-    hostname: reading
+    hostname: "reading"
 server:
-  port: 51610
+  port: "51610"
 reading:
   prometheus:
-    enabled: false
+    enabled: "false"
   message:
     broker:
       consumer:
         exchange:
-          name: ConsumerReadingEvents
+          name: "ConsumerReadingEvents"
       publisher:
         exchange:
-          name: PublishedReadingEvents
-      hostname: rabbitmq
-      port: 5672
+          name: "PublishedReadingEvents"
+      hostname: "rabbitmq"
+      port: "5672"
   rabbitmq:
-    username: guest
-    password: guest
+    username: "guest"
+    password: "guest"
   queue:
-    name: ReadingConsumerQueue
+    name: "ReadingConsumerQueue"
+spring:
+  data:
+    mongodb:
+      host: "readingmongo"
+      port: "27017"
