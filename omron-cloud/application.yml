@@ -21,3 +21,7 @@ logging:
     com:
       nanthealth: TRACE
       isirona: TRACE
+spring:
+  cloud:
+    discovery:
+      enabled: "true"
