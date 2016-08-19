@@ -21,5 +21,3 @@ logging:
     com:
       nanthealth: TRACE
       isirona: TRACE
-docker:
-  host: 172.17.0.1
