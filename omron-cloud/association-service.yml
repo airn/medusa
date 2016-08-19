@@ -30,5 +30,5 @@ logging:
 spring:
   data:
     elasticsearch:
-      cluster-nodes: "${docker.host}:9300"
+      cluster-nodes: "associationelastic:9300"
       cluster-name: elasticsearch
