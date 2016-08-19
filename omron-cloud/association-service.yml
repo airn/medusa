@@ -27,3 +27,8 @@ association:
       topic: ${association.message.broker.uri}
 logging:
   file: associatio-service.log
+spring:
+  data:
+    elasticsearch:
+      cluster-nodes: "${docker.host}:9300"
+      cluster-name: elasticsearch
