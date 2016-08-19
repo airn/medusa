@@ -26,7 +26,7 @@ association:
     external: 
       topic: ${association.message.broker.uri}
 logging:
-  file: associatio-service.log
+  file: association-service.log
 spring:
   data:
     elasticsearch:
