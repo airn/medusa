@@ -29,5 +29,8 @@ omron:
         exchange:
           name: rawReadings
         options: ?exchangeType=fanout
-        
+spring:
+  rabbitmq:
+    listener:
+      default-requeue-rejected: false
       
