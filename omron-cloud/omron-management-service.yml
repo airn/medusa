@@ -14,7 +14,7 @@ omron:
       internal:
         endpoint: vm:rawReadings
       endpoint:
-        logs: log:marshalled
+        log: log:marshalled
       external:
         event:
           bus:
