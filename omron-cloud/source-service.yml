@@ -26,7 +26,7 @@ source:
         exchange:
           name: rawReadings
         options: ?exchangeType=fanout&queue=sourceConsumerEventQueue&autoDelete=false
-      uri: ${source.message.broker.type}://${source.message.broker.hostname}:${source.message.broker.port}/${source.message.broker.consumer.exchange.name}${source.message.broker.consumer.options}
+      uri: ${source.message.broker.type}://${source.message.broker.hostname}:${source.message.broker.port}/${source.message.broker.producer.exchange.name}${source.message.broker.producer.options}
       publisher:
         exchange:
           name: producerSourceEvents
@@ -40,7 +40,7 @@ source:
   service:
     consumer:
       external:
-        topic: ${source.message.broker.type}://${source.message.broker.hostname}:${source.message.broker.port}/${source.message.broker.producer.exchange.name}${source.message.broker.producer.options}
+        topic: ${source.message.broker.type}://${source.message.broker.hostname}:${source.message.broker.port}/${source.message.broker.consumer.exchange.name}${source.message.broker.consumer.options}
       internal:
         endpoint: vm:sourceConsumerEventQueue
   rabbitmq:
