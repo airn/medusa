@@ -19,7 +19,7 @@ omron:
         event:
           bus:
             topic:
-              endpoint: ${omron.message.broker.type}://${omron.message.broker.hostname}:${omron.message.broker.port}/${omron.message.broker.producer.exchange.name}${source.message.broker.producer.options}
+              endpoint: ${omron.message.broker.type}://${omron.message.broker.hostname}:${omron.message.broker.port}/${omron.message.broker.producer.exchange.name}${omron.message.broker.producer.options}
   message:
     broker:
       hostname: rabbitmq
