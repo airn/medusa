@@ -28,7 +28,7 @@ omron:
       producer:
         exchange:
           name: rawReadings
-        options: ?exchangeType=fanout
+        options: ?exchangeType=fanout&autoDelete=false
 spring:
   rabbitmq:
     listener:
