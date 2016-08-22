@@ -21,7 +21,7 @@ reading:
     username: "guest"
     password: "guest"
   queue:
-    name: "ConsumerReadingQueue"
+    name: "ReadingConsumerQueue"
 spring:
   data:
     mongodb:
