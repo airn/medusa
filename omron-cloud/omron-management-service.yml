@@ -10,16 +10,16 @@ omron:
   refreshTokenUrl: https://ohi-oauth.numerasocial.com/connect/token
   dataUrl: https://ohi-api.numerasocial.com/api/measurement
   event:
-    external:
-      event:
-        bus:
-          topic:
-            endpoint: ${omron.message.broker.type}://${omron.message.broker.hostname}:${omron.message.broker.port}/${omron.message.broker.producer.exchange.name}${source.message.broker.producer.options}
     publisher:
       internal:
         endpoint: vm:rawReadings
       endpoint:
         logs: log:marshalled
+      external:
+        event:
+          bus:
+            topic:
+              endpoint: ${omron.message.broker.type}://${omron.message.broker.hostname}:${omron.message.broker.port}/${omron.message.broker.producer.exchange.name}${source.message.broker.producer.options}
   message:
     broker:
       hostname: rabbitmq
