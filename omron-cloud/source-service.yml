@@ -26,7 +26,7 @@ source:
         exchange:
           name: rawReadings
         options: ?exchangeType=fanout&queue=SourceConsumerQueue
-      uri: ${source.message.broker.type}://${source.message.broker.hostname}:${source.message.broker.port}/${source.message.broker.producer.exchange.name}${source.message.broker.producer.options}
+      uri: ${source.message.broker.type}://${source.message.broker.hostname}:${source.message.broker.port}/${source.message.broker.comsumer.exchange.name}${source.message.broker.comsumer.options}
       publisher:
         exchange:
           name: producerSourceEvents
