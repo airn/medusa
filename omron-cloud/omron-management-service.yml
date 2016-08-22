@@ -28,6 +28,6 @@ omron:
       producer:
         exchange:
           name: rawReadings
-        options: ?exchangeType=topic
+        options: ?exchangeType=fanout
         
       
