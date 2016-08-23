@@ -1,0 +1,48 @@
+---
+eureka:
+  instance:
+    hostname: source-aaron
+server:
+  port: 51611
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+source:
+  event:
+    publisher:
+      endpoint:
+        log: log:marshalled
+      external:
+        topic: ${source.message.broker.uri}
+      internal:
+        endpoint: vm:sourceEventQueue
+  prometheus:
+    enabled: false
+  message:
+    broker:
+      consumer:
+        exchange:
+          name: rawReadings
+        options: ?exchangeType=fanout&queue=sourceConsumerEventQueue&autoDelete=false
+      uri: ${source.message.broker.type}://${source.message.broker.hostname}:${source.message.broker.port}/${source.message.broker.producer.exchange.name}${source.message.broker.producer.options}
+      publisher:
+        exchange:
+          name: producerSourceEvents
+      producer:
+        options: ?exchangeType=topic
+        exchange:
+          name: producerSourceEvents
+      type: rabbitmq
+      hostname: localhost
+      port: 5672
+  service:
+    consumer:
+      external:
+        topic: ${source.message.broker.type}://${source.message.broker.hostname}:${source.message.broker.port}/${source.message.broker.consumer.exchange.name}${source.message.broker.consumer.options}
+      internal:
+        endpoint: vm:sourceConsumerEventQueue
+  rabbitmq:
+    username: guest
+    password: guest
